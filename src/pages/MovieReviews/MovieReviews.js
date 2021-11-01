@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import {fetchMovieForReviews} from "../../components/MovieApi/MovieLinksApi";
 import MovieReviewsItem from "./MovieReviewsItem";
+import * as MovieLinksApi from "../../components/MovieApi/MovieLinksApi";
 
 
 const MovieReviews = () => {
@@ -9,8 +10,8 @@ const MovieReviews = () => {
   const {movieId} = useParams()
 
   useEffect(() => {
-    fetchMovieForReviews(movieId)
-      .then(response => response.json())
+    MovieLinksApi.fetchMovieForReviews(movieId)
+      // .then(response => response.json())
       .then(reviews => setReviews(reviews.results))
   }, [])
 

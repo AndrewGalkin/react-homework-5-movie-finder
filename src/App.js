@@ -19,21 +19,17 @@ export default function App() {
   return (
     <div>
       <NavigationBar/>
-
-        <Route path="/" exact component={MovieTopList}>
-        </Route>
+      <Route path="/" exact component={MovieTopList}>
+      </Route>
       <Route path="/movie" exact>
         <MovieSearchBar onSubmit={handleSearch}/>
         <MovieSearchRender query={query}/>
       </Route>
-      <Route path="/movie/:movieId" component={MovieView}>
+      <Route path="/movie/:movieId" component={MovieView}/>
+      <Route path="/movie/:movieId/cast" component={MovieCastView}>
       </Route>
-      <Route path="/movie/:movieId/cast" exact component={MovieCastView}>
+      <Route path="/movie/:movieId/reviews" component={MovieReviews}>
       </Route>
-        <Route path="/movie/:movieId/reviews" exact component={MovieReviews}>
-        </Route>
-
-
     </div>
   )
 }

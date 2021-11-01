@@ -1,6 +1,7 @@
 import {useState} from "react";
-import {useHistory, useLocation} from "react-router-dom";
+import {Route, useHistory, useLocation} from "react-router-dom";
 import classes from "./Form.module.scss";
+import PageNotFound from "../../components/PageNotFound/PageNotFound";
 
 const MovieSearchBar = ({onSubmit}) => {
   const [searchQuery, setSearchQuery] = useState("")
@@ -28,21 +29,24 @@ const MovieSearchBar = ({onSubmit}) => {
 
 
   return (
-    <form onSubmit={handleSubmit} className={classes.search_form}>
-      <input
-        className={classes.input_field}
-        type="text"
-        autoComplete="off"
-        autoFocus
-        value={searchQuery}
-        onChange={handleChangeName}
-        placeholder="Search images and photos"
-      />
-      <label className={classes.input_label}>Search Images...</label>
-      <button type="submit">
-        <span>Search</span>
-      </button>
-    </form>
-)
+    <>
+      <form onSubmit={handleSubmit} className={classes.search_form}>
+        <input
+          className={classes.input_field}
+          type="text"
+          autoComplete="off"
+          autoFocus
+          value={searchQuery}
+          onChange={handleChangeName}
+          placeholder="Search images and photos"
+        />
+        <label className={classes.input_label}>Search Images...</label>
+        <button type="submit">
+          <span>Search</span>
+        </button>
+      </form>
+    </>
+
+  )
 }
 export default MovieSearchBar

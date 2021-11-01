@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {fetchMovieForActors} from "../../components/MovieApi/MovieLinksApi";
+import * as MovieLinksApi from "../../components/MovieApi/MovieLinksApi";
 import {useParams} from "react-router-dom";
 import MovieCastViewItem from "./MovieCastViewItem";
 import classes from "./MovieCast.module.scss";
@@ -10,9 +10,10 @@ const MovieCastView = () => {
   const {movieId} = useParams()
 
   useEffect(() => {
-    fetchMovieForActors(movieId)
-      .then(response => response.json())
+    MovieLinksApi.fetchMovieForActors(movieId)
+      // .then(response => response.json())
       .then(cast => setCast(cast.cast))
+    console.log(2)
   }, [])
 
   return (
