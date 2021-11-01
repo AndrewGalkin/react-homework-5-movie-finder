@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-homework-5-movie-finder/static/css/main.b1ebff48.chunk.css",
+    "main.js": "/react-homework-5-movie-finder/static/js/main.e4822a0e.chunk.js",
+    "main.js.map": "/react-homework-5-movie-finder/static/js/main.e4822a0e.chunk.js.map",
+    "runtime-main.js": "/react-homework-5-movie-finder/static/js/runtime-main.ae38b5ee.js",
+    "runtime-main.js.map": "/react-homework-5-movie-finder/static/js/runtime-main.ae38b5ee.js.map",
+    "static/js/2.0bd4a1f7.chunk.js": "/react-homework-5-movie-finder/static/js/2.0bd4a1f7.chunk.js",
+    "static/js/2.0bd4a1f7.chunk.js.map": "/react-homework-5-movie-finder/static/js/2.0bd4a1f7.chunk.js.map",
+    "index.html": "/react-homework-5-movie-finder/index.html",
+    "static/css/main.b1ebff48.chunk.css.map": "/react-homework-5-movie-finder/static/css/main.b1ebff48.chunk.css.map",
+    "static/js/2.0bd4a1f7.chunk.js.LICENSE.txt": "/react-homework-5-movie-finder/static/js/2.0bd4a1f7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae38b5ee.js",
+    "static/js/2.0bd4a1f7.chunk.js",
+    "static/css/main.b1ebff48.chunk.css",
+    "static/js/main.e4822a0e.chunk.js"
+  ]
+}
